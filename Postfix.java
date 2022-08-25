@@ -51,7 +51,9 @@ return stack.pop();
       }
 
       public static void main(String[] args){
-        String exp = "23+4-";
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your Postfix Expression");
+        String exp = input.nextLine();
         System.out.println("Postfix Evaluation:"+evaluatePostfix(exp));
         
       }
