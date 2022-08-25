@@ -1,3 +1,4 @@
+package usefulpackage;
 public class Stack {
     private int array[];
     private int capacity;
@@ -12,7 +13,7 @@ public class Stack {
     public void push (int x){
         if(isFull()){
             System.out.println("Overflow\nProgram terminated\n");
-            System.exit(0);
+            System.exit(-1);
         } else {
             array[++top] = x;
         }
@@ -32,7 +33,7 @@ public class Stack {
         return array[top--];
     }
  
-    }
+    
 
     //utility function to return what is at the top of the stack
     public int peek(){
@@ -41,7 +42,6 @@ public class Stack {
         } else {
             System.exit(0);
         }
-         
         return -1;
     }
     //utility function to check the size of our stack
