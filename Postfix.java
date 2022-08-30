@@ -46,6 +46,9 @@ void evaluatePostfix(Stack<String> myStack1,Stack<String> myStack2){
   } else {
     //read the element from the string and see if it can be an operand
     String itemPicked = myStack1.pop();
+    if(checkType(itemPicked).equals("opd")){
+      
+    }
   }
 
  
